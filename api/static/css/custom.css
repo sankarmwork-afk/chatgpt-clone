@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    /* font-family: "sans-serif" 
+    font-weight: 400; */
+    font-weight: 400;
+}
+
+body{
+    overflow-x: hidden;
+    background: #212121;
+    color: white;
+}
+
+p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container-fluid-2{
+    /* border: 1px solid black; */
+    height: 75vh !important;
+    overflow: auto
+}
+
+.container-fluid-2 h1{
+    text-align: center;
+}
+
+.container-fluid-2 .bot-feature-container{
+    width: 80%;
+    height: 400px;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container-fluid-2 .bot-feature-container .feature-container{
+    width: 250px;
+    height: 350px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.container-fluid-2 .bot-feature-container .feature-container .feature{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    border-radius: 10px;
+
+}
+
+.container-fluid-2 .bot-feature-container .feature-container .icon{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-fluid-2 .bot-feature-container .feature-container .icon i{
+    font-size: 28px;
+}
+
+
+
+.submit-form{
+    width: 500px;
+    height: 60px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+
+.submit-form input{
+    height: 50px;
+    width: 400px;
+    padding: 10px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.submit-form button{
+    border: none;
+    background: none;
+    font-size: 28px;
+}
+
+.user{
+    /* border: 1px solid purple; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px 0px 30px 0px;
+}
+
+.user i{
+    font-size: 20px;
+}
+
+
+.user p{
+    font-weight: bold;
+}
+
+.chat-today{
+    height: auto;
+    margin-bottom: 20px;
+    /* border: 1px solid blue; */
+}
+
+.chat-today .chat{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+    overflow-y: auto;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.chat-today .chat p{
+
+    height: auto;
+    margin: 0px 10px;
+}
+
+
+.chat-today .chat p:hover{
+    color: gray;
+    transition: ease-in-out;
+
+}
+
+
+
+
+
+#list-group{
+    padding: 10px 10px 10px 10px;
+    width: 250px;
+    overflow: auto;
+    /* border: 1px solid red; */
+    height: 100vh !important;
+    overflow: auto !important;
+}
+
+.chat-today small{
+    font-weight: bold;
+}
+
+
+
+
+/* --- Chat section: Clean design --- */
+#chat-messages{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chat-container{
+    margin: 20px 0;
+}
+
+.user-chat-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.user-message{
+    background: #10a37f;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 70%;
+}
+
+.bot-chat-container{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.bot-response{
+    background: #2f2f2f;
+    color: white;
+    padding: 12px 16px;
+    border-radius: 18px;
+    max-width: 70%;
+    line-height: 1.6;
+}
+
+.bot-icon,
+.user-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.bot-icon i,
+.user-pic i{
+    font-size: 28px;
+}
+
+.spinner-main{
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .container-fluid-2{
+        overflow: auto;
+    }
+    .bot-feature-container{
+        height: auto;
+    }
+  }
+
+
+
+
+
+@media only screen and (max-width: 500px){
+
+    .submit-form{
+        width: 300px;
+        height: 60px;
+        /* border: 1px solid black; */
+        
+    }
+    
+    
+    .submit-form input{
+        height: 50px;
+        width: 250px;
+    
+    }
+
+}
