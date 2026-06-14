@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-fye2bk%b#4j_eho_kp-qkxj373i^-3pku!p0m5v^9=(4-&o=0x"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     "chatgpt-clone-ttc2.onrender.com",
