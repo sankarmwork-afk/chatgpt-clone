@@ -25,7 +25,11 @@ SECRET_KEY = "django-insecure-fye2bk%b#4j_eho_kp-qkxj373i^-3pku!p0m5v^9=(4-&o=0x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "chatgpt-clone-ttc2.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
