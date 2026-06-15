@@ -8,6 +8,7 @@ urlpatterns = [
     path('signout/', views.signout, name='signout'),
     path('getvalue/', views.getValue),
     path('chat/', views.chat, name='chat'),
+    path("new-chat/", views.new_chat, name="new_chat")
     # urls.py
 path("chat/<int:id>/", views.chat_detail, name="chat_detail"),
 ]
