@@ -31,6 +31,13 @@
                         <p>Hi, {{request.user.username}}</p>
                         <a href="{% url 'signout' %}">Logout</a>
                     </div>
+                       <div class="new-chat-btn">
+                           <a href="{% url 'new_chat' %}" class="btn btn-primary w-100">
+                          <i class="fa-solid fa-plus"></i> New Chat
+                           </a>
+                       </div>
+
+                       
                     {% for chat in chats %}
                      <div class="chat">
                       <i class="fa-regular fa-message"></i>
