@@ -106,5 +106,11 @@ def chat_detail(request, id):
         "chatapp/chat_detail.html",
         context
     )
+
+
+
+
+def new_chat(request):
+    return redirect("/")
    
 
